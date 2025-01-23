@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3 Grid App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="options">
+    <label>
+      <input type="checkbox" id="toggleLabels" checked onchange="toggleLabels()"> Show Labels
+    </label>
+  </div>
+  
+  <div class="grid-container" id="gridContainer">
+    <div class="grid-item">
+      <div class="label">Animal</div>
+      <div class="image-wrapper">
+        <img id="img1" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img1')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Place</div>
+      <div class="image-wrapper">
+        <img id="img2" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img2')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Plant</div>
+      <div class="image-wrapper">
+        <img id="img3" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img3')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Character</div>
+      <div class="image-wrapper">
+        <img id="img4" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img4')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Season</div>
+      <div class="image-wrapper">
+        <img id="img5" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img5')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Hobby</div>
+      <div class="image-wrapper">
+        <img id="img6" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img6')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Food</div>
+      <div class="image-wrapper">
+        <img id="img7" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img7')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Colour</div>
+      <div class="image-wrapper">
+        <img id="img8" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img8')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="label">Drink</div>
+      <div class="image-wrapper">
+        <img id="img9" src="" class="croppable" draggable="false">
+        <label class="upload-button">
+          <input type="file" accept="image/*" class="file-input" onchange="loadAndCropImage(this, 'img9')">
+          Upload Image
+        </label>
+      </div>
+    </div>
+  </div>
+  <button onclick="exportGrid()">Export as Image</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
